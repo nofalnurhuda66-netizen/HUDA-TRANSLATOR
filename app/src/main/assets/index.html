@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HUDA TRANSLATOR</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0f1326;color:#fff;font-family:Arial,sans-serif;padding:24px}
+.logo{width:54px;height:54px;border-radius:16px;background:#7657ff;display:grid;place-items:center;font-size:27px}
+h1{font-size:25px;margin:18px 0 5px}.muted{color:#aeb8d4}.panel{margin-top:22px;padding:18px;border-radius:20px;background:#202947}
+button{border:0;border-radius:13px;padding:15px;width:100%;margin-top:12px;background:#7657ff;color:white;font-weight:bold;font-size:14px}
+.stop{background:#394363}.small{font-size:12px;color:#aeb8d4;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="logo">文</div><h1>HUDA TRANSLATOR</h1>
+<div class="muted">SCREEN TRANSLATOR · OCR · FLOATING WINDOW</div>
+<div class="panel"><b>Terjemahan layar</b><p class="small">ENGLISH → INDONESIA</p>
+<p class="small">Baca teks yang terlihat pada layar dan tampilkan hasil terjemahan dalam jendela mengambang.</p>
+</div>
+<button onclick="HUDA.allowOverlay()">1. IZINKAN TAMPIL DI ATAS APLIKASI</button>
+<button onclick="HUDA.startTranslation()">2. MULAI PENERJEMAHAN LAYAR</button>
+<button class="stop" onclick="HUDA.stopTranslation()">HENTIKAN PENERJEMAHAN</button>
+<p class="small">Android akan menampilkan permintaan izin berbagi layar. OCR dan terjemahan berjalan pada perangkat setelah model bahasa diunduh. Jangan aktifkan saat layar menampilkan informasi pribadi.</p>
+</body></html>
